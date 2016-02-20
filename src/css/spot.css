@@ -1,0 +1,38 @@
+headerView{
+  padding: 5px 0px 5px 0px;
+  display: block;
+  border-bottom: 2px solid #e5e5e5;
+  background: #1B6477;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  position: relative;
+  z-index: 1
+}
+
+.reset {
+  padding: 0;
+  margin: 0;
+}
+
+.SprinklrLogoBubble {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 2%;
+}
+
+.SprinklrTitle{
+  font-size: 200%;
+  display: inline-block;
+  padding-left: 2%;
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

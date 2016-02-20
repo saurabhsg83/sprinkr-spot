@@ -1,0 +1,10 @@
+# Languages required
+languages:
+  JavaScript: true
+
+# Paths to exclude - all libraries
+exclude_paths:
+  - "build/*.*"
+  - "test/*.*"
+  - "vendor/*.*"
+  - "app/scripts/r.js"

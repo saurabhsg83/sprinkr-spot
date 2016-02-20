@@ -1,0 +1,42 @@
+@mixin button-bg-color($color) {
+  color:$white;
+  background-color:$color;
+  border: 2px solid $color;
+  border-radius:2px;
+  &:hover {
+    color:$white;
+  }
+}
+
+@mixin button-border-color($color){
+  color:$color;
+  background-color: #fff;
+  border: 2px solid $color;
+  border-radius:2px;
+   &:hover {
+    color:$color;
+  }
+}
+
+.btn-border-greeny-blue{
+  @include button-border-color($greeny_blue);
+}
+.btn-border-pinkish-grey{
+  @include button-border-color($pinkish_grey);
+}
+.btn-border-nasty-green{
+   @include button-border-color($nasty_green);
+}
+.btn-bg-nasty-green{
+     @include button-bg-color($nasty_green);
+}
+.btn-bg-tealish{
+     @include button-bg-color($tealish);
+}
+.btn-border-salmon{
+    @include button-border-color($salmon);
+}
+
+.btn-bg-salmon {
+   @include button-bg-color($salmon);
+}

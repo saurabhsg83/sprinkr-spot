@@ -1,0 +1,17 @@
+$greeny_blue:#4dc0ad;
+$salmon:#ff7f66;
+$white:#fff;
+$nasty_green:#74aa42;
+$brownish_grey:#606060;
+$warm_grey:#999999;
+$box-shadow_color:rgba(0,0,0,0.16);
+$pinkish_grey:#bdbdbd;
+$tealish:#1db5ad;
+$switch_on_green:#7ac143;
+
+//react switch varaibles
+$rsbc-transtion-delay: 0.4s;
+$rsbc-theme-flat-color-on: $switch_on_green;
+$rsbc-theme-flat-color-on-border: darken($rsbc-theme-flat-color-on, 10%);
+$rsbc-theme-flat-color-off: #686868;
+$rsbc-theme-flat-color-off-border: darken($rsbc-theme-flat-color-off, 10%);

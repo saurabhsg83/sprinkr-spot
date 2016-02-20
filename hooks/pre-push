@@ -1,0 +1,63 @@
+#!/bin/sh
+
+# An example hook script to verify what is about to be pushed.  Called by "git
+# push" after it has checked the remote status, but before anything has been
+# pushed.  If this script exits with a non-zero status nothing will be pushed.
+#
+# This hook is called with the following parameters:
+#
+# $1 -- Name of the remote to which the push is being done
+# $2 -- URL to which the push is being done
+#
+# If pushing without using a named remote those arguments will be equal.
+#
+# Information about the commits which are being pushed is supplied as lines to
+# the standard input in the form:
+#
+#   <local ref> <local sha1> <remote ref> <remote sha1>
+
+#!/bin/bash
+CMD_TEST="grunt ci" # Command that runs your tests
+CMD_CODE_STYLE="jscs `git diff --name-only  --diff-filter=ACMRTUXB develop | grep \\.js$ | grep .ejs$` " # Command that checks code style
+protected_branch='master'
+
+# Check if we actually have commits to push
+commits=`git log @{u}..`
+if [ -z "$commits" ]; then
+    exit 0
+fi
+
+
+current_branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+
+#Following if loop can be better written with array or hash
+if [[ $current_branch = "master" ]]; then
+    echo "\033[31mPushing to master directly is not allowed. This incident will be reported. Please create necessary pull request. "
+    exit 1
+fi
+if [[ $current_branch = "release" ]]; then
+    echo "\033[31mPushing to release directly is not allowed. This incident will be reported. Please create necessary pull request. "
+    exit 1
+fi
+if [[ $current_branch = "develop" ]]; then
+    echo "\033[31mPushing to develop directly is not allowed. This incident will be reported. Please create necessary pull request. "
+    exit 1
+fi
+
+# echo "Checking code style"
+# $CMD_CODE_STYLE
+# RESULT=$?
+# if [ $RESULT -ne 0 ]; then
+#     echo "\033[31mFailed code style check. Please fix all the problems before pushing"
+#     exit 1
+# fi
+
+echo "Running unit tests before pushing"
+$CMD_TEST
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+    echo "\033[31mFailed unit test cases. Please fix test cases, verify by running them locally and push again."
+    exit 1
+fi
+
+exit 0

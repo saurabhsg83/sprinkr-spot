@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'PlutoSansRegular';
+  src: url('PlutoSansRegular.eot?#iefix') format('embedded-opentype'),  url('PlutoSansRegular.otf')  format('opentype'),
+	     url('PlutoSansRegular.woff') format('woff'), url('PlutoSansRegular.ttf')  format('truetype'), url('PlutoSansRegular.svg#PlutoSansRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

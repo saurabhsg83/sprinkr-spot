@@ -1,0 +1,12 @@
+#!/bin/bash
+#Obtain list of javascript files in the staged area
+CMD_CODE_STYLE="jscs `git diff --name-only --cached --diff-filter=ACMRTUXB | grep \\.js$ | grep -v .ejs$` " # Command that checks code style
+
+echo "Checking code style"
+$CMD_CODE_STYLE
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+    echo "failed code style check. Please fix all the problems before commiting"
+    exit 1
+fi
+exit 0

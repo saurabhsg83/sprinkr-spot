@@ -1,0 +1,90 @@
+body{
+  font-family: 'Open Sans';
+  background-color: #f7f7f7;
+}
+
+#header {
+  background-color: $white;
+  border: 1px solid #dddddd;
+  .navbar{
+    background-color: $white;
+    border:0px;
+    margin-bottom: 0px;
+    .container-fluid{
+      display: flex;
+      justify-content: space-between;
+    }
+    .navbar-brand{
+      display: flex;
+      align-items: center;
+      img{
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+#menu-content{
+  padding:20px;
+  padding:20px;
+  overflow-x: scroll;
+    .calculative-width{
+      width: 540 * 7px;
+    }
+    .slotwrapper{
+        width: 2/14 * 100%;
+        &:after{
+            content:"";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            border-left: 2px dotted #444;
+        }
+    }
+}
+.slots-width{
+  width: 3660px;
+}
+
+.sidebar-wrapper{
+  background-color: $white;
+  border: 1px solid #dddddd;
+  border-top: 0px;
+}
+
+.searchbar-wrap{
+  width: 300px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+#filter-bar{
+  background-color: $white;
+  padding-top:10px;
+  padding-bottom: 10px
+}
+
+.veg-icon{
+  color:$nasty_green;
+}
+
+.nonveg-icon{
+  color:orange;
+}
+
+.nasty_green{
+  color:$nasty_green
+}
+
+.greeny_blue{
+  color:$greeny_blue
+}
+
+.ui-effects-transfer{
+  border: 2px dotted gray;
+}
