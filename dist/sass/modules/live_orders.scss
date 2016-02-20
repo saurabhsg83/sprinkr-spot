@@ -1,0 +1,228 @@
+.latest-orders-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.24);
+  border-color: #eeeeee;
+  max-width: 500px;
+  background-color: #fff;
+  margin-bottom: 20px;
+
+  color: #606060;
+  .margin-bottom-10 {
+    margin-bottom: 10px;
+  }
+  .margin-left-10{
+    margin-left: 10px;
+  }
+  .padding-top-5{
+    padding-top: 5px;
+  }
+
+  .padding-top-15 {
+    padding-top: 15px;
+  }
+  .margin-top-10{
+    margin-top: 10px;
+  }
+
+  .margin-top-15 {
+    margin-top: 15px;
+  }
+
+  .padding-bottom-5 {
+    padding-bottom: 5px;
+  }
+  .padding-bottom-15 {
+    padding-bottom: 15px;
+  }
+
+  .padding-left-10 {
+    padding-left: 10px;
+  }
+  .bottom-border {
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  .left-border {
+    border-left: 1px solid #EEEEEE;
+  }
+
+  .right-border{
+    border-right: 1px solid #EEEEEE;
+  }
+
+  .header-height {
+    line-height: 41px;
+  }
+  .left-header {
+    .serial-number {
+      font-size: 18px;
+    }
+    .time {
+      font-size: 12px;
+    }
+  }
+  .address {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .customer-details {
+    font-size: 11px;
+    font-weight: lighter;
+    color: #606060;
+  }
+
+  .order-id {
+    font-size: 10px;
+  }
+  .item {
+    color: #686868;
+
+    .header {
+      font-size: 12px;
+    }
+
+    .name {
+      font-size: 12px;
+      font-weight: 600;
+      padding-left: 2px;
+    }
+    .qty-price {
+      font-size: 11px;
+      white-space: nowrap;
+    }
+  }
+  .scrollable {
+    min-height: 140px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sub-items {
+    color: #a3a3a3;
+    .name {
+      font-size: 10px;
+      font-style: italic;
+
+      .add-on {
+        margin-left: 10px;
+      }
+    }
+    .qty-price {
+      font-size: 9px;
+    }
+  }
+  .sub-total {
+    background: #f9f9f9;
+    .header {
+      font-size: 10px;
+    }
+    .charges {
+      font-size: 11px;
+      white-space: nowrap;
+    }
+    .other_charges {
+      text-decoration: none;
+      color: inherit;
+    }
+    .other_charges_content {
+      font-size: 9px;
+    }
+  }
+  .collect-from-user {
+    font-weight: bold;
+    color: #f67d5b;
+    line-height: 53px;
+    .header{
+      font-size: 12px;
+    }
+    .charges{
+      font-size: 15px;
+    }
+  }
+  .preparing {
+    line-height: 10px;
+    padding-top: 14px;
+  }
+  .delivery-time {
+    background: #f9f9f9;
+    font-size: 13px;
+    line-height: 53px;
+
+    .btn{
+      font-size: 12px;
+      margin-left: 10px;
+      color: #606060;
+      font-weight: bold;
+      border-color: #cccccc;
+    }
+    .btn-default:hover,
+    .btn-default:focus {
+      background-color: #8d8d8d;
+      color: #fff;
+      font-weight:bold;
+    }
+  }
+  .decline-accept {
+    line-height: 75px;
+    .order-id {
+      font-size: 10px;
+      font-weight: light;
+    }
+    .btn {
+      width: 89px;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+  }
+  .declined-row {
+    background-color: #c7cbd6;
+    color: #ffffff;
+    .declined {
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+}
+
+.prep-orders-card {
+  width: 335px;
+  .sm-exclaim-danger {
+    background: #FC845F;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-style: normal;
+    font-size: 11px;
+    padding: 1px 0;
+  }
+  .change{
+    margin-bottom: 16px;
+    .bring{
+      font-size: 10px;
+      font-weight: 200;
+    }
+  }
+
+  .dispatch {
+    line-height: 38px;
+    padding: 0px 0px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .ed {
+    background-color: #878b8f;
+  }
+  .left-header {
+    .time-left {
+      font-size: 12px;
+      color: #fa8564;
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+}
+
+

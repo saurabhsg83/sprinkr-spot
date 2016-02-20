@@ -1,0 +1,23 @@
+.outerContainer{
+  background: $white;
+  padding:20px;
+  border:1px solid $pinkish_grey;
+  margin-top: 20px;
+}
+.select_wrap{
+  display:flex;
+  justify-content: space-between;
+  padding:10px;
+}
+.item-vegtype{
+  @extend .select_wrap;
+}
+.item-perishable{
+  @extend .select_wrap;
+}
+
+.item-photo-caption{
+   display: flex;
+   align-items: baseline;
+   justify-content: space-around;
+}
