@@ -14,7 +14,7 @@ Please find the running project(deployed on heroku) [here](https://spriklr-spot.
 * Require.js as AMD
 * Build tools: npm, grunt and bower
 * Backend: Ruby on Rails, Postgres Database
-* Both FrontEnd and Backend are deployed on Heroku
+* Both Frontend and Backend are deployable on Heroku
 
 # Project setup steps #
  1. Pull code from repo with fast-forward
@@ -43,7 +43,7 @@ Please find the running project(deployed on heroku) [here](https://spriklr-spot.
    grunt serve (FOR DEVELOPMENT ENVIRONMENT)
    ```
  6. grunt serve:dist (FOR PRODUCTION ENVIRONMENT)
-
+    ```
 # Grunt Tasks #
 * JS Concatination and Uglification
 * CSS, HTML, IMAGE minification and concatination
