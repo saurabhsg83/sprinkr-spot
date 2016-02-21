@@ -7,7 +7,7 @@ require(['amd-config'], function (AMD_CONFIG) {
       'app',
       'jquery'
     ], function (App, $) {
-      App.initialize(); //H.startRaygun()
+      App.initialize();
         $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
           var ApiAccessToken = localStorage.getItem('session_token');
           if (ApiAccessToken !== undefined) {

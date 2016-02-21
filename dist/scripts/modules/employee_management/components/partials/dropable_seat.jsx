@@ -11,10 +11,6 @@ define([
 function ($, _, Backbone, React, ReactBootstrap, ReactDnD, alertify, HTML5Backend) {
   'use strict';
   var squareTarget = {
-    canDrop: function (props) {
-      return !!props.project
-    },
-
     drop: function (props, monitor) {
       var name = _.capitalize(window.draggedModel.model.get('name'));
       var msg =  name + ' has been moved to Table-' + window.draggedModel.table + '/Seat-' + window.draggedModel.model.get('seat') + ' to Table-' + props.table + '/Seat-' + props.number + ' and his/her project is ' + props.project + ' . Notification has been sent to ' + name;
@@ -27,6 +23,7 @@ function ($, _, Backbone, React, ReactBootstrap, ReactDnD, alertify, HTML5Backen
       });
       props.collection.find({table: props.table}).get('employees').add(window.draggedModel.model.attributes);
       Backbone.trigger('collection:change');
+      window.draggedModel.model.save();
       alertify.success(msg);
     }
   };

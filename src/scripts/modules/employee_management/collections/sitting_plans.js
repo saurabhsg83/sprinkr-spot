@@ -12,7 +12,7 @@ define([
       _.extend(this, options);
     },
 
-    url: '',
+    url: 'https://dry-lowlands-91593.herokuapp.com/spot/employees',
 
     parse: function (response) {
       return response.payload;

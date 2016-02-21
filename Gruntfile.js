@@ -409,6 +409,8 @@ module.exports = function(grunt) {
       'cssmin:localcss',
       'connect',
       'watch'
+
+
     ]);
   });
 

@@ -127,3 +127,34 @@ headerView {
 .search-icon {
   cursor: pointer;
 }
+
+#loading-message, #loading-overlay {
+  z-index: 1000000000000;
+  position: fixed;
+}
+
+#loading-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #AAB2BD;
+  opacity: .7;
+}
+
+#loading-message {
+  width: 400px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #fff;
+  font-size: 1.5em;
+  left: 50%;
+  top: 45%;
+  margin-left: -200px;
+  margin-top: -50px;
+}
+
+#loading-message {
+  text-align: center;
+}
+

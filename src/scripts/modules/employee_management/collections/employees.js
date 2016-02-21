@@ -11,8 +11,6 @@ define([
       _.extend(this, options);
     },
 
-    url: '',
-
     parse: function (response) {
       return response.payload;
     },
