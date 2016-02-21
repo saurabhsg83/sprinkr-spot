@@ -33,12 +33,12 @@ function ($, React, Header, DragableSeat, DropableSeat, Table, SearchBar, Filter
     render_seat: function (model, seat_number) {
       var seat_model = model.get('employees').find({seat: seat_number});
       var element = (
-        <DropableSeat model={seat_model} number={seat_number} collection={this.getCollection()} table={model.get('table')} />
+        <DropableSeat model={seat_model} number={seat_number} collection={this.getCollection()} table={model.get('table')} project={model.get('project')} />
       );
 
       if (!!seat_model) {
         element = (
-          <DragableSeat model={seat_model} number={seat_number} collection={this.getCollection()} table={model.get('table')} />
+          <DragableSeat model={seat_model} number={seat_number} collection={this.getCollection()} table={model.get('table')} project={model.get('project')} />
         );
       }
 
