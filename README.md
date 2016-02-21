@@ -43,7 +43,7 @@ Please find the running project(deployed on heroku) [here](https://spriklr-spot.
    grunt serve (FOR DEVELOPMENT ENVIRONMENT)
    ```
  6. grunt serve:dist (FOR PRODUCTION ENVIRONMENT)
-    ```
+
 # Grunt Tasks #
 * JS Concatination and Uglification
 * CSS, HTML, IMAGE minification and concatination
