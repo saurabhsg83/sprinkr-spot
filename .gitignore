@@ -19,6 +19,7 @@ test/
 .sass-cache
 src/libs/
 .tmp
+dist
 test/bower_components/
 vendor/
 src/scripts/main.js.map
