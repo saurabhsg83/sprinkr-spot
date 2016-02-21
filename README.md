@@ -7,7 +7,7 @@
 * Notify Employees about changes
 
 # Running Project #
-Please find the running project(deployed on heroku) [here](https://spriklr-spot.herokuapp.com/)
+Please find the running project(deployed on heroku) at https://spriklr-spot.herokuapp.com/
 
 # Architecture #
 * HTML,CSS, Javascript and Jquery
