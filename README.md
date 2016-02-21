@@ -10,6 +10,7 @@
 Please find the running project(deployed on heroku) [here](https://spriklr-spot.herokuapp.com/)
 
 # Architecture #
+* HTML,CSS, Javascript and Jquery
 * Javascript Frameworks: React and Backbone
 * Require.js as AMD
 * Build tools: npm, grunt and bower
