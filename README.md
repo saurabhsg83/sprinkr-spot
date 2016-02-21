@@ -16,6 +16,7 @@ Please find the running project(deployed on heroku) at https://spriklr-spot.hero
 * Build tools: npm, grunt and bower
 * Backend: Ruby on Rails, Postgres Database
 * Both Frontend and Backend are deployable on Heroku
+* Node is used for deploymenton Heroku
 
 # Project setup steps #
  1. Pull code from repo with fast-forward
