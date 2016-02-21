@@ -2,9 +2,10 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'react'
+  'react',
+  'alertify'
 ],
-function ($, _, Backbone, React) {
+function ($, _, Backbone, React, alertify) {
   'use strict';
   return React.createClass({
     getInitialState: function() {
@@ -18,7 +19,12 @@ function ($, _, Backbone, React) {
     },
 
     search_name: function (e) {
-      var pattern = this.refs.search_value.value
+      var pattern = this.refs.search_value.value;
+      if (!!!pattern) {
+        alertify.warning("Please enter the name before search");
+        return;
+      }
+
       this.setState({
         value: pattern
       });
@@ -31,6 +37,14 @@ function ($, _, Backbone, React) {
           employee.set('found', true);
         });
       });
+
+      if (!result.length) {
+        this.alert_no_result();
+      }
+    },
+
+    alert_no_result: function() {
+      alertify.error("No Employee exist with this name");
     },
 
     handleChange: function(e) {

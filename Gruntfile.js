@@ -14,6 +14,15 @@ module.exports = function(grunt) {
     return connect.static(require('path').resolve(dir));
   };
 
+  var css_files = [
+    '<%= yeoman.app %>/scripts/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css',
+    '<%= yeoman.app %>/fonts/fontawesome/css/font-awesome.min.css',
+    '<%= yeoman.app %>/scripts/vendor/bower_components/alertifyjs/build/css/alertify.min.css',
+    '<%= yeoman.app %>/css/spot.css',
+    '<%= yeoman.app %>/css/main.css',
+    '<%= yeoman.app %>/css/style.css'
+  ];
+
   /**
    * Generates object of files hashes and its old file names to be used in hash replacing in hashfiles task
    * @param  {strung} module_path Path of the module to be hashed
@@ -179,7 +188,7 @@ module.exports = function(grunt) {
       css: {
         options: {},
         src: [
-          '<%= yeoman.dist %>/css/tinyowlmin.css',
+          '<%= yeoman.dist %>/css/spotmin.css',
           '<%= yeoman.dist %>/scripts/config/config.js'
         ],
         // File that refers to above files and needs to be updated with the hashed name
@@ -213,7 +222,7 @@ module.exports = function(grunt) {
       css: {
         src: [
           '<%= yeoman.dist %>/**/*.css',
-          '!<%= yeoman.dist %>/css/tinyowlmin.*.css'
+          '!<%= yeoman.dist %>/css/spotmin.*.css'
         ]
       },
       js: {
@@ -351,37 +360,12 @@ module.exports = function(grunt) {
       },
       sitecss: {
         files: {
-          '<%= yeoman.dist %>/css/tinyowlmin.css': [
-            '<%= yeoman.app %>/scripts/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css',
-            '<%= yeoman.app %>/fonts/fontawesome/css/font-awesome.min.css',
-            '<%= yeoman.app %>/scripts/vendor/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css',
-            '<%= yeoman.app %>/scripts/vendor/bower_components/jquery-timepicker-jt/jquery.timepicker.css',
-            '<%= yeoman.app %>/scripts/vendor/bower_components/select2/select2.css',
-            '<%= yeoman.app %>/scripts/vendor/bower_components/select2/select2-bootstrap.css',
-            '<%= yeoman.app %>/scripts/vendor/bower_components/alertify.js/dist/css/alertify.css',
-            '<%= yeoman.app %>/css/fonts.css',
-            '<%= yeoman.app %>/css/circle.css',
-            '<%= yeoman.app %>/css/restaurants.css',
-            '<%= yeoman.app %>/css/main.css',
-            '<%= yeoman.app %>/css/style.css'
-          ]
+          '<%= yeoman.dist %>/css/spotmin.css': css_files
         }
       },
       localcss: {
         files: {
-          '<%= yeoman.app %>/css/tinyowlmin.css': [
-            '<%= yeoman.app %>/scripts/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css',
-            '<%= yeoman.app %>/fonts/fontawesome/css/font-awesome.min.css',
-            '<%= yeoman.app %>/scripts/vendor/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css',
-            '<%= yeoman.app %>/scripts/vendor/bower_components/jquery-timepicker-jt/jquery.timepicker.css',
-            '<%= yeoman.app %>/scripts/vendor/bower_components/select2/select2.css',
-            '<%= yeoman.app %>/scripts/vendor/bower_components/select2/select2-bootstrap.css',
-            '<%= yeoman.app %>/scripts/vendor/bower_components/alertify.js/dist/css/alertify.css',
-            '<%= yeoman.app %>/css/fonts.css',
-            '<%= yeoman.app %>/css/circle.css',
-            '<%= yeoman.app %>/css/restaurants.css',
-            '<%= yeoman.app %>/css/style.css'
-          ]
+          '<%= yeoman.app %>/css/spotmin.css': css_files
         }
       }
     }

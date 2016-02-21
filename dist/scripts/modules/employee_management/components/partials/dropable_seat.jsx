@@ -41,7 +41,7 @@ function ($, _, Backbone, React, ReactBootstrap, ReactDnD, alertify, HTML5Backen
 
   var Seat = React.createBackboneClass({
     componentWillMount: function () {
-
+      alertify.set('notifier','position', 'top-right');
     },
 
     componentDidUpdate: function () {

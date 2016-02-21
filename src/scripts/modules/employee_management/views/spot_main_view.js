@@ -20,7 +20,7 @@ define([
         var data = [
           {
               table: 1,
-              project: 'xyz',
+              project: 'Supply',
               employees: [
                   {
                       id: 1,
@@ -29,7 +29,7 @@ define([
                       team: 'Tech',
                       seat: 1,
                       table: 1,
-                      project: 'xyz'
+                      project: 'Supply'
                   },
 
                   {
@@ -39,43 +39,43 @@ define([
                       team: 'Data',
                       seat: 4,
                       table: 1,
-                      project: 'xyz'
+                      project: 'Supply'
                   },
 
                   {
                       id: 3,
-                      name: 'gaurabh',
+                      name: 'Gaurabh',
                       designation: 'designer',
                       team: 'Design',
                       seat: 3,
                       table: 1,
-                      project: 'xyz'
+                      project: 'Supply'
                   }
               ]
 
           },
           {
               table: 2,
-              project: 'dfg',
+              project: 'User Retention',
               employees: [
                   {
                       id: 4,
-                      name: 'gaurabh',
+                      name: 'Rakesh',
                       designation: 'Full stack',
                       team: 'Tech',
                       seat: 1,
                       table: 2,
-                      project: 'dfg'
+                      project: 'User Retention'
                   },
 
                   {
                       id: 5,
                       name: 'Himel',
-                      designation: 'sceince',
+                      designation: 'Sceince',
                       team: 'Data',
                       seat: 2,
                       table: 2,
-                      project: 'dfg'
+                      project: 'User Retention'
                   },
 
                   {
@@ -85,151 +85,222 @@ define([
                       team: 'Design',
                       seat: 3,
                       table: 2,
-                      project: 'dfg'
+                      project: 'User Retention'
                   }
               ]
 
           },
           {
-              table: 2,
-              project: 'dfg',
+              table: 3,
+              project: 'MIS',
               employees: [
                   {
-                      id: 4,
-                      name: 'gaurabh',
+                      id: 7,
+                      name: 'Gaurabh',
                       designation: 'Full stack',
                       team: 'Tech',
                       seat: 1,
-                      table: 2,
-                      project: 'dfg'
+                      table: 3,
+                      project: 'MIS'
                   },
 
                   {
-                      id: 5,
+                      id: 8,
                       name: 'Himel',
-                      designation: 'sceince',
+                      designation: 'Sceince',
                       team: 'Data',
                       seat: 2,
-                      table: 2,
-                      project: 'dfg'
+                      table: 3,
+                      project: 'MIS'
                   },
 
                   {
-                      id: 6,
-                      name: 'Debu',
+                      id: 9,
+                      name: 'Shilpa',
                       designation: 'designer',
                       team: 'Design',
                       seat: 3,
-                      table: 2,
-                      project: 'dfg'
+                      table: 3,
+                      project: 'MIS'
                   }
               ]
 
           },
           {
-              table: 2,
-              project: 'dfg',
+              table: 4,
+              project: 'Restaurant Onboarding',
               employees: [
                   {
-                      id: 4,
-                      name: 'gaurabh',
-                      designation: 'Full stack',
-                      team: 'Tech',
+                      id: 10,
+                      name: 'Gagan',
+                      designation: 'Manager',
+                      team: 'Product Manager',
                       seat: 1,
-                      table: 2,
-                      project: 'dfg'
+                      table: 4,
+                      project: 'Restaurant Onboarding'
                   },
 
                   {
-                      id: 5,
-                      name: 'Himel',
+                      id: 11,
+                      name: 'Rahul',
                       designation: 'sceince',
                       team: 'Data',
                       seat: 2,
-                      table: 2,
-                      project: 'dfg'
+                      table: 4,
+                      project: 'Restaurant Onboarding'
                   },
 
                   {
-                      id: 6,
-                      name: 'Debu',
+                      id: 13,
+                      name: 'Hardik',
                       designation: 'designer',
                       team: 'Design',
                       seat: 3,
-                      table: 2,
-                      project: 'dfg'
+                      table: 4,
+                      project: 'Restaurant Onboarding'
                   }
               ]
 
           },
           {
-              table: 2,
-              project: 'dfg',
+              table: 5,
+              project: 'Offers',
               employees: [
                   {
-                      id: 4,
-                      name: 'gaurabh',
-                      designation: 'Full stack',
-                      team: 'Tech',
+                      id: 14,
+                      name: 'Ishan',
+                      designation: 'Manager',
+                      team: 'Product Manager',
                       seat: 1,
-                      table: 2,
-                      project: 'dfg'
+                      table: 5,
+                      project: 'Offers'
                   },
 
                   {
-                      id: 5,
-                      name: 'Himel',
+                      id: 15,
+                      name: 'Krishna',
                       designation: 'sceince',
                       team: 'Data',
                       seat: 2,
-                      table: 2,
-                      project: 'dfg'
+                      table: 5,
+                      project: 'Offers'
                   },
 
                   {
-                      id: 6,
-                      name: 'Debu',
+                      id: 16,
+                      name: 'Goyal',
                       designation: 'designer',
                       team: 'Design',
                       seat: 3,
-                      table: 2,
-                      project: 'dfg'
+                      table: 5,
+                      project: 'Offers'
+                  },
+
+                  {
+                      id: 17,
+                      name: 'Shikhar',
+                      designation: 'Backend Developer',
+                      team: 'Tech',
+                      seat: 4,
+                      table: 5,
+                      project: 'Offers'
                   }
               ]
 
           },
           {
-              table: 2,
-              project: 'dfg',
+              table: 6,
+              project: 'Magical Fridge',
               employees: [
                   {
-                      id: 4,
-                      name: 'gaurabh',
-                      designation: 'Full stack',
-                      team: 'Tech',
+                      id: 18,
+                      name: 'Prithvi',
+                      designation: 'Manager',
+                      team: 'Product Manager',
                       seat: 1,
-                      table: 2,
-                      project: 'dfg'
+                      table: 6,
+                      project: 'Magical Fridge'
                   },
 
                   {
-                      id: 5,
+                      id: 19,
+                      name: 'Alkesh',
+                      designation: 'Backend Engineer',
+                      team: 'Tech',
+                      seat: 2,
+                      table: 6,
+                      project: 'Magical Fridge'
+                  },
+
+                  {
+                      id: 20,
+                      name: 'Zunaid',
+                      designation: 'Frontend Engineer',
+                      team: 'Tech',
+                      seat: 3,
+                      table: 6,
+                      project: 'Magical Fridge'
+                  }
+              ]
+
+          },
+          {
+              table: 7,
+              project: 'Restaurant App',
+              employees: [
+                  {
+                      id: 21,
+                      name: 'Akash',
+                      designation: 'Andriod Developer',
+                      team: 'Tech',
+                      seat: 1,
+                      table: 7,
+                      project: 'Restaurant App'
+                  },
+                  {
+                      id: 23,
+                      name: 'Saurabh Gupta',
+                      designation: 'Full Stack',
+                      team: 'Tech',
+                      seat: 2,
+                      table: 7,
+                      project: 'Restaurant App'
+                  }
+              ]
+
+          },
+          {
+              table: 8,
+              project: 'Food Quality',
+              employees: [
+                  {
+                      id: 24,
+                      name: 'Manas',
+                      designation: 'Manager',
+                      team: 'Product Manager',
+                      seat: 2,
+                      table: 8,
+                      project: 'Food Quality'
+                  },
+
+                  {
+                      id: 25,
                       name: 'Himel',
                       designation: 'sceince',
                       team: 'Data',
-                      seat: 2,
-                      table: 2,
-                      project: 'dfg'
+                      seat: 3,
+                      table: 8,
+                      project: 'Food Quality'
                   },
 
                   {
-                      id: 6,
-                      name: 'Debu',
+                      id: 26,
+                      name: 'Nandani',
                       designation: 'designer',
                       team: 'Design',
-                      seat: 3,
-                      table: 2,
-                      project: 'dfg'
+                      seat: 4,
+                      table: 8,
+                      project: 'Food Quality'
                   }
               ]
 

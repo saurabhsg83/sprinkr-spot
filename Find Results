@@ -1,0 +1,213 @@
+Searching 28401 files for "tinyowlmin"
+
+/Users/sourabh/sitting/.gitignore:
+   34  gzipped/
+   35  SampleReadme.md
+   36: src/css/tinyowlmin.css
+   37  src/scripts/config/config.js
+   38  src/scripts/templates.js
+
+/Users/sourabh/sitting/Gruntfile.js:
+  189          options: {},
+  190          src: [
+  191:           '<%= yeoman.dist %>/css/tinyowlmin.css',
+  192            '<%= yeoman.dist %>/scripts/config/config.js'
+  193          ],
+  ...
+  223          src: [
+  224            '<%= yeoman.dist %>/**/*.css',
+  225:           '!<%= yeoman.dist %>/css/tinyowlmin.*.css'
+  226          ]
+  227        },
+  ...
+  361        sitecss: {
+  362          files: {
+  363:           '<%= yeoman.dist %>/css/tinyowlmin.css': css_files
+  364          }
+  365        },
+  366        localcss: {
+  367          files: {
+  368:           '<%= yeoman.app %>/css/tinyowlmin.css': css_files
+  369          }
+  370        }
+
+/Users/sourabh/sitting/src/index.html:
+    8    <link rel="shortcut icon" type="image/ico" href="images/sprinklr.png" />
+    9    <!-- <link rel="stylesheet" href="css/restaurants.css"> -->
+   10:   <link rel="stylesheet" href="css/tinyowlmin.css">
+   11  </head>
+   12  <body>
+
+6 matches across 3 files
+
+
+Searching 28401 files for "tinyowlmin"
+
+/Users/sourabh/sitting/.gitignore:
+   34  gzipped/
+   35  SampleReadme.md
+   36: src/css/tinyowlmin.css
+   37  src/scripts/config/config.js
+   38  src/scripts/templates.js
+
+/Users/sourabh/sitting/Gruntfile.js:
+  189          options: {},
+  190          src: [
+  191:           '<%= yeoman.dist %>/css/tinyowlmin.css',
+  192            '<%= yeoman.dist %>/scripts/config/config.js'
+  193          ],
+  ...
+  223          src: [
+  224            '<%= yeoman.dist %>/**/*.css',
+  225:           '!<%= yeoman.dist %>/css/tinyowlmin.*.css'
+  226          ]
+  227        },
+  ...
+  361        sitecss: {
+  362          files: {
+  363:           '<%= yeoman.dist %>/css/tinyowlmin.css': css_files
+  364          }
+  365        },
+  366        localcss: {
+  367          files: {
+  368:           '<%= yeoman.app %>/css/tinyowlmin.css': css_files
+  369          }
+  370        }
+
+/Users/sourabh/sitting/src/index.html:
+    8    <link rel="shortcut icon" type="image/ico" href="images/sprinklr.png" />
+    9    <!-- <link rel="stylesheet" href="css/restaurants.css"> -->
+   10:   <link rel="stylesheet" href="css/tinyowlmin.css">
+   11  </head>
+   12  <body>
+
+6 matches across 3 files
+
+
+Searching 28401 files for "tinyowl"
+
+/Users/sourabh/sitting/.jshintrc:
+   18      "jquery": true,
+   19      "globals": {
+   20:         "TinyowlRestaurantWebapp": true,
+   21:         "TinyowlRestaurantWebapp": true,
+   22          "_": false,
+   23          "Backbone": false,
+
+/Users/sourabh/sitting/bower.json:
+    1  {
+    2:   "name": "TinyowlRestaurantWebapp",
+    3    "version": "0.0.0",
+    4    "dependencies": {
+
+/Users/sourabh/sitting/Gruntfile.js:
+  223          src: [
+  224            '<%= yeoman.dist %>/**/*.css',
+  225:           '!<%= yeoman.dist %>/css/tinyowlmin.*.css'
+  226          ]
+  227        },
+
+/Users/sourabh/sitting/README.md:
+    1: # Tinyowl Restaurant Webapp #
+    2
+    3  * Punch in orders
+    .
+    5  * View and create offers
+    6  * Raise RRT Query
+    7: * POS service for tinyowl & 3pl/3pv[3rd party vendor].
+    8    - Menu Management Service
+    9    - Inventory Management Service
+   ..
+   63  # Basic Webapp Usage #
+   64  ### Access Management - Steps for Central Panel ###
+   65:   * Register on Tinyowl central panel [Tinyowl-central](https://github.com/Flutterbee/central) (depending on your environment) as a user.
+   66    * Get/grant access on central panel using the contact number you provided while registering.
+   67    * Allot necessary roles
+   ..
+   71    * Check the 'Is App Service ON' and 'Has Restaurant App' boxes.
+   72    * Add contact number in 'Mobile Number' field with which you want to access webapp
+   73:   * Uncheck 'Is TinyOwl's Device' box if it is to be used in webapp
+   74    * Now you can use your central panel login credentials to access restaurant webapp
+   75
+   ..
+   77    * Get a test consumer app for your development environment from QA test
+   78    * Install it in genymotion or on a phone
+   79:   * Choose the restaurant which you assigned to yourself on tinyowl central panel
+   80    * Build your cart and place an order.
+   81    * firebase is already taking care of maintaining live socket with the restaurant server and as soon as you place an order on consumer app, webapp gets a new order
+   ..
+   83  # Offer Testing #
+   84    * Create an offer from restaurant webapp.
+   85:   * Go to tinyowl central panel and view your restaurant offers
+   86    * Approve your offer
+   87    * Created offer should be visible in the consumer app for the restaurant you created the offer for. If not,check your offer availability and timing, it should match that of the restaurant
+
+/Users/sourabh/sitting/consul/default/development.json:
+    1: {"application":{"socket_api_url":"//localhost:8080","kafka":{"suffix":"UzBefwatju","prefix":"awtUnUbyic","ProductId":"ZiipegedO8","KafkaURL":"//staging-kafka.tinyowl.com/v1/publish"},"base_api_url":"//restaurant-app.tinyowl.com"}}
+
+/Users/sourabh/sitting/consul/finalConfigs/config.json:
+    1: {"application":{"socket_api_url":"//localhost:8080","kafka":{"suffix":"UzBefwatju","prefix":"awtUnUbyic","ProductId":"ZiipegedO8","KafkaURL":"//staging-kafka.tinyowl.com/v1/publish"},"base_api_url":"https://api-release.tinyowl.com"}}
+
+/Users/sourabh/sitting/consul/sourabh/development.json:
+    1: {"application":{"base_api_url":"https://api-release.tinyowl.com"}}
+    2
+
+/Users/sourabh/sitting/src/scripts/templates.js:
+    5  var __t, __p = '', __e = _.escape;
+    6  with (obj) {
+    7: __p += '<div class=\'OffersContainer\' id=\'OffersCanvas\'>\n  <div class=\'OfferResponse bkstg_msg\'></div>\n  <div class=\'offersHeader\'>\n    <div class=\'pull-right\'>\n    </div>\n  </div>\n  <div class=\'offersTabHeader\'>\n    <div class=\'offrTbHdrBtmHR\'></div>\n    <div class=\'offrTbHdrovrly\'>\n    <button class=\'add_offer\'>\n        Create Offer\n      </button>\n      <div id=\'New_Offers\' class=\'offersTab actv_ofr_tb\'>\n        Running\n      </div>\n      <div id=\'Expired_Offers\' class=\'offersTab\'>\n        Expired\n      </div>\n      <div id=\'Pending_Offers\' class=\'offersTab\'>\n        Pending\n      </div>\n    </div>\n  </div>\n  <div class=\'offersContainer\' id=\'offersContainer\'>\n\n  </div>\n\n</div>\n<div class=\'OfferCreation\' id=\'OfferCreation\'>\n\n</div>\n<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">\n  <div class="modal-dialog" role="document">\n    <div class="modal-content">\n      <div class="modal-header">\n        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\n        <h4 class="modal-title" id="myModalLabel">Tinyowl Offer Panel</h4>\n      </div>\n      <div class="modal-body text-center" id=\'message_template\'>\n        ...\n      </div>\n      <div class="modal-footer">\n        <button type="button" class="btn btn-default setNewOfferExpiry">Save</button>\n      </div>\n    </div>\n  </div>\n</div>\n<div class="modal fade" id="locationModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">\n  <div class="modal-dialog" role="document">\n    <div class="modal-content">\n      <div class="modal-header">\n        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\n        <h4 class="modal-title" id="myModalLabel">Tinyowl Offer Panel</h4>\n      </div>\n      <div class="modal-body" id=\'location_template\'>\n        ...\n      </div>\n      <div class="modal-footer">\n        <button type="button" class="btn btn-success setRestroList" data-dismiss="modal">Save</button>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\'Ofr_ext_confrm_Box hide\'>\n  <div class=\'ofr_cnfrm_msg\'>\n    This change cannot be reverted.<br/>\n    Are you sure you want to change the offer expiry date?\n  </div>\n  <div class=\'row\'>\n    <div class=\'col-sm-6 text-center\'>\n      <button id=\'CancelOfferExtension\' class=\'Post_Offer_Action cnfrm_ofr_ext_cncl\'>Cancel</button>\n    </div>\n    <div class=\'col-sm-6 text-center\'>\n      <button id=\'AllowOfferExtension\' data-permit=\'false\' data-offer-id=\'\' class=\'Post_Offer_Action\'>Confirm</button>\n    </div>\n  </div>\n</div>\n<div class=\'Ofr_tgl_confrm_Box hide\'>\n  <div class=\'ofr_cnfrm_msg\'>\n    Your offer has been saved to draft but going back will discard your progress.<br/>\n    Are you sure you want to go back to the offers list?\n  </div>\n  <div class=\'row\'>\n    <div class=\'col-sm-6 text-center\'>\n      <button id=\'CancelOfferToggle\' class=\'Post_Offer_Action cnfrm_ofr_tgl_cncl\'>Cancel</button>\n    </div>\n    <div class=\'col-sm-6 text-center\'>\n      <button id=\'View_Offers\' data-permit=\'false\' data-offer-id=\'\' class=\'Post_Offer_Action\'>Confirm</button>\n    </div>\n  </div>\n</div>\n<div class=\'OfferTemplateContainer hide\'>\n  <div id=\'ofrTmplList\'>\n    \n  </div>\n  <div class=\'row\'>\n    <div class=\'col-sm-12 text-center\'>\n      <button class=\'SelectTemplate pull-right\'>Done</button>\n    </div>\n  </div>\n</div>\n';
+    8
+    9  }
+   ..
+   54  '\' type="text" class="input-small RobotoRegular">\n                  <div class=\'small-txt grey-txt proxima hints\'>\n                    Offer End Time\n                  </div>\n                </div>\n              </div>\n\n            </div>\n          </div>\n          <div class=\'row\'>\n            <div class=\'col-md-2\'>\n              <div class=\'formTitle\' style=\'font-size:20px\'>Days</div>\n            </div>\n            <div class=\'col-md-10\'>\n              <div class=\'row no-pad-mar days_list proxima\'>\n                <div class=\'col-md-12\'>\n                  <div class=\'AllDaysList\'>\n                    <div class=\'row\'>\n                      <div class=\'col-md-5\'>\n                        <input type=\'checkbox\' name=\'days\' value=\'ALL\' data-meta-day=\'ALL\' class=\'all_days\'/>\n                        &nbsp;All Days\n                      </div>\n                    </div>\n                  </div>\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'MONDAY\' data-meta-day=\'Mon\' class=\'days\'/>\n                  &nbsp;Mon\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'TUESDAY\' data-meta-day=\'Tue\' class=\'days\'/>\n                  &nbsp;Tues\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'WEDNESDAY\' data-meta-day=\'Wed\' class=\'days\'/>\n                  &nbsp;Wed\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'THURSDAY\' data-meta-day=\'Thu\' class=\'days\'/>\n                  &nbsp;Thurs\n                </div>\n                <div class=\'col-md-12 hidenPadding\'></div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'FRIDAY\' data-meta-day=\'Fri\' class=\'days\'/>\n                  &nbsp;Fri\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'SATURDAY\' data-meta-day=\'Sat\' class=\'days\'/>\n                  &nbsp;Sat\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'SUNDAY\' data-meta-day=\'Sun\' class=\'days\'/>\n                  &nbsp;Sun\n                </div>\n                <div class=\'col-md-12\'>\n                  <div class=\'small-txt grey-txt proxima hints\'>\n                    Set days of the week on which offer is available\n                  </div>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\'NewOfferForm form-3 hide\'>\n        <div class=\'NewOfferFormHeader\'>\n          <div class=\'formTitle\'><b>Payment Mode</b></div>\n          <div class=\'formSubTitle\'>\n            Payment gateways for the offers\n          </div>\n        </div>\n        <div class=\'NewOfferDetails_1\'>\n          <div class=\'row\'>\n            <div class=\'col-md-12\'>\n              <div class=\'formTitle\' style=\'font-size:20px\'>\n                Mode of Payment\n              </div>\n            </div>\n            <div class=\'col-md-12\'>\n              <div class=\'row no-pad-mar payment_list\'>\n                <div class=\'col-md-3\'>\n                  <input type=\'radio\' name=\'payment\' value="COD" class=\'payment\'/>\n                  &nbsp;Cash\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'radio\' name=\'payment\' value="ONLINE" class=\'payment\'/>\n                  &nbsp;Online\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'radio\' name=\'payment\' value="ALL" class=\'payment\'/>\n                  &nbsp;All\n                </div>\n                <div class=\'col-md-12\'>\n                  <div class=\'small-txt grey-txt proxima hints\'>\n                    Set your mode of payment\n                  </div>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\'NewOfferForm form-4 hide\'>\n        <div class=\'NewOfferFormHeader\'>\n          <div class=\'formTitle\'><b>Other Details</b></div>\n          <div class=\'formSubTitle\'>\n            Other Details of the offer\n          </div>\n        </div>\n        <div class=\'NewOfferDetails_1\'>\n          <div class=\'row\'>\n            <div class=\'col-md-6\'>\n              <div class=\'formTitle\' style=\'font-size:20px\'>\n                Is the offer unique?\n              </div>\n            </div>\n            <div class=\'col-md-6\'>\n              <label class="switch">\n                <input class="switch-input" id=\'is_unique\' type="checkbox" />\n                <span class="switch-label" data-on="Yes" data-off="No"></span>\n                <span class="switch-handle"></span>\n              </label>\n            </div>\n            <div class=\'col-md-12\'>\n              <div class=\'small-txt grey-txt proxima\'>\n                No. of times this offer can be used by a single user\n              </div>\n            </div>\n            <div class=\'col-md-12 speech_bubble_container\'>\n              <div class=\'speech_bubble\'>\n                <div class="bubble">\n                  <div class=\'row no-pad-mar\'>\n                    <div class=\'col-md-4 no-pad-mar text-center small-txt\'>\n                      Maximum Offer Usage\n                    </div>\n                    <div class=\'col-md-4 no-pad-mar\'>\n                      <div class=\'row setUsageCount no-pad-mar\'>\n                        <div class=\'col-md-4 down_btn no-pad-mar\'>\n                          <i class=\'fa fa-minus\'></i>\n                        </div>\n                        <div class=\'col-md-4 no-pad-mar\'>\n                          <input type=\'text\' value=\'1\' class=\'usage_count\'>\n                        </div>\n                        <div class=\'col-md-4 up_btn no-pad-mar\'>\n                          <i class=\'fa fa-plus\'></i>\n                        </div>\n                      </div>\n                    </div>\n                    <div class=\'col-md-4 no-pad-mar\'>\n                      <button class=\'setUsageLimit pull-right\'>Done</button>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              <savedUserLimit></savedUserLimit>\n            </div>\n          </div>\n          <div class=\'row\'>\n            <div class=\'col-md-4\'>\n              <div class=\'formTitle\' style=\'font-size:20px\'>\n                Offer Count\n              </div>\n            </div>\n            <div class=\'col-md-6\'>\n              <input type=\'text\' class=\'offer_count\' value=\'' +
+   55  ((__t = ( offer.redeemable_count )) == null ? '' : __t) +
+   56: '\'/>\n            </div>\n            <div class=\'col-md-2 text-center\'>\n              <button class=\'setOfferLimit\'>Done</button>\n            </div>\n            <div class=\'col-md-12\'>\n              <div class=\'small-txt grey-txt proxima hints\'>\n                Set the number of offers you wish to be redeemable\n              </div>\n            </div>\n            <savedUsageLimit></savedUsageLimit>\n          </div>\n          <div class=\'row\'>\n            <button class=\'selectCities text-center\' data-toggle="modal" data-target="#locationModal">\n              Pick Cities&nbsp;&nbsp;<i class=\'fa fa-map-marker\'></i>\n            </button>\n          </div>\n        </div>\n      </div>\n\n      <div class=\'Tips\'>\n        <div class=\'row paginator\'>\n          <div class=\'col-md-3 no-pad-mar\'>\n            <button class=\'backBtn text-center\' disabled data-page-enum=\'1\'>\n              Back\n            </button>\n          </div>\n          <div class=\'col-md-6\'></div>\n          <div class=\'col-md-3 no-pad-mar\'>\n            <button class=\'NextBtn text-center pull-right\' data-page-enum=\'1\' disabled>\n              Next\n            </button>\n          </div>\n        </div>\n        <div class=\'orange-txt tipsHeader\'>\n          Tips\n        </div>\n        <div class=\'TipContent\'>\n          Buy items worth Rs. 500 &amp; get 40% off. Fill in the minimum amount on which the discount is given. Discount can be in percentage or rupees.\n        </div>\n      </div>\n    </div>\n    <div class=\'col-lg-6 col-md-6 col-sm-6 OfferPreviewContainer\'>\n      <OffersPreview></OffersPreview>\n    </div>\n  </div>\n</newOffer>\n<div class=\'error_modal hide\'>\n  <div class="modal-dialog" role="document">\n    <div class="modal-content">\n      <div class="modal-header">\n        <button type="button" class="close closeErrorModal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\n        <h4 class="modal-title" id="myModalLabel">Tinyowl Offer Panel</h4>\n      </div>\n      <div class="modal-body">\n        <div class=\'ofr_crte_err_msg\'></div>\n      </div>\n      <div class="modal-footer">\n        <button type="button" class="btn btn-warning closeErrorModal">Ok</button>\n      </div>\n    </div>\n  </div>\n\n</div>\n';
+   57
+   58  }
+   ..
+  121  __p += '\n                  <div class=\'small-txt grey-txt proxima hints\'>\n                    Offer End Time\n                  </div>\n                </div>\n              </div>\n\n            </div>\n          </div>\n          <div class=\'row\'>\n            <div class=\'col-md-2\'>\n              <div class=\'formTitle\' style=\'font-size:20px\'>Days</div>\n            </div>\n            <div class=\'col-md-10\'>\n              <div class=\'row no-pad-mar days_list proxima\'>\n                <div class=\'col-md-12\'>\n                  <div class=\'AllDaysList\'>\n                    <div class=\'row\'>\n                      <div class=\'col-md-5\'>\n                        <input type=\'checkbox\' name=\'days\' value=\'ALL\' data-meta-day=\'ALL\' class=\'all_days\'/>\n                        &nbsp;All Days\n                      </div>\n                    </div>\n                  </div>\n                </div>\n                <div class=\'col-md-3\'>\n                <input type=\'checkbox\' name=\'days\' value=\'MONDAY\' data-meta-day=\'Mon\' class=\'days\'/>\n                  &nbsp;Mon\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'TUESDAY\' data-meta-day=\'Tue\' class=\'days\'/>\n                  &nbsp;Tues\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'WEDNESDAY\' data-meta-day=\'Wed\' class=\'days\'/>\n                  &nbsp;Wed\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'THURSDAY\' data-meta-day=\'Thu\' class=\'days\'/>\n                  &nbsp;Thurs\n                </div>\n                <div class=\'col-md-12 hidenPadding\'></div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'FRIDAY\' data-meta-day=\'Fri\' class=\'days\'/>\n                  &nbsp;Fri\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'SATURDAY\' data-meta-day=\'Sat\' class=\'days\'/>\n                  &nbsp;Sat\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'checkbox\' name=\'days\' value=\'SUNDAY\' data-meta-day=\'Sun\' class=\'days\'/>\n                  &nbsp;Sun\n                </div>\n                <div class=\'col-md-12\'>\n                  <div class=\'small-txt grey-txt proxima hints\'>\n                    Set days of the week on which offer is available\n                  </div>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\'NewOfferForm form-3 hide\'>\n        <div class=\'NewOfferFormHeader\'>\n          <div class=\'formTitle\'><b>Payment Mode</b></div>\n          <div class=\'formSubTitle\'>\n            Payment gateways for the offers\n          </div>\n        </div>\n        <div class=\'NewOfferDetails_1\'>\n          <div class=\'row\'>\n            <div class=\'col-md-12\'>\n              <div class=\'formTitle\' style=\'font-size:20px\'>\n                Mode of Payment\n              </div>\n            </div>\n            <div class=\'col-md-12\'>\n              <div class=\'row no-pad-mar payment_list\'>\n                <div class=\'col-md-3\'>\n                  <input type=\'radio\' name=\'payment\' value="COD" class=\'payment\'/>\n                  &nbsp;Cash\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'radio\' name=\'payment\' value="ONLINE" class=\'payment\'/>\n                  &nbsp;Online\n                </div>\n                <div class=\'col-md-3\'>\n                  <input type=\'radio\' name=\'payment\' value="ALL" class=\'payment\'/>\n                  &nbsp;All\n                </div>\n                <div class=\'col-md-12\'>\n                  <div class=\'small-txt grey-txt proxima hints\'>\n                    Set your mode of payment\n                  </div>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\'NewOfferForm form-4 hide\'>\n        <div class=\'NewOfferFormHeader\'>\n          <div class=\'formTitle\'><b>Other Details</b></div>\n          <div class=\'formSubTitle\'>\n            Other Details of the offer\n          </div>\n        </div>\n        <div class=\'NewOfferDetails_1\'>\n          <div class=\'row\'>\n            <div class=\'col-md-6\'>\n              <div class=\'formTitle\' style=\'font-size:20px\'>\n                Is the offer unique?\n              </div>\n            </div>\n            <div class=\'col-md-6\'>\n              <label class="switch">\n                <input class="switch-input" id=\'is_unique\' type="checkbox" />\n                <span class="switch-label" data-on="Yes" data-off="No"></span>\n                <span class="switch-handle"></span>\n              </label>\n            </div>\n            <div class=\'col-md-12\'>\n              <div class=\'small-txt grey-txt proxima\'>\n                No. of times this offer can be used by a single user\n              </div>\n            </div>\n            <div class=\'col-md-12 speech_bubble_container\'>\n              <div class=\'speech_bubble\'>\n                <div class="bubble">\n                  <div class=\'row no-pad-mar\'>\n                    <div class=\'col-md-4 no-pad-mar text-center small-txt\'>\n                      Maximum Offer Usage\n                    </div>\n                    <div class=\'col-md-4 no-pad-mar\'>\n                      <div class=\'row setUsageCount no-pad-mar\'>\n                        <div class=\'col-md-4 down_btn no-pad-mar\'>\n                          <i class=\'fa fa-minus\'></i>\n                        </div>\n                        <div class=\'col-md-4 no-pad-mar\'>\n                          <input type=\'text\' value=\'1\' class=\'usage_count\'>\n                        </div>\n                        <div class=\'col-md-4 up_btn no-pad-mar\'>\n                          <i class=\'fa fa-plus\'></i>\n                        </div>\n                      </div>\n                    </div>\n                    <div class=\'col-md-4 no-pad-mar\'>\n                      <button class=\'setUsageLimit pull-right\'>Done</button>\n                    </div>\n                  </div>\n                </div>\n              </div>\n              <savedUserLimit></savedUserLimit>\n            </div>\n          </div>\n          <div class=\'row\'>\n            <div class=\'col-md-4\'>\n              <div class=\'formTitle\' style=\'font-size:20px\'>\n                Offer Count\n              </div>\n            </div>\n            <div class=\'col-md-6\'>\n              <input type=\'text\' class=\'offer_count\' value=\'' +
+  122  ((__t = ( offer.redeemable_count )) == null ? '' : __t) +
+  123: '\'/>\n            </div>\n            <div class=\'col-md-2 text-center\'>\n              <button class=\'setOfferLimit\'>Done</button>\n            </div>\n            <div class=\'col-md-12\'>\n              <div class=\'small-txt grey-txt proxima hints\'>\n                Set the number of offers you wish to be redeemable\n              </div>\n            </div>\n            <savedUsageLimit></savedUsageLimit>\n          </div>\n          <div class=\'row\'>\n            <button class=\'selectCities text-center\' data-toggle="modal" data-target="#locationModal">\n              Pick Cities&nbsp;&nbsp;<i class=\'fa fa-map-marker\'></i>\n            </button>\n          </div>\n        </div>\n      </div>\n\n      <div class=\'Tips\'>\n        <div class=\'row paginator\'>\n          <div class=\'col-md-3 no-pad-mar\'>\n            <button class=\'backBtn text-center\' disabled data-page-enum=\'1\'>\n              Back\n            </button>\n          </div>\n          <div class=\'col-md-6\'></div>\n          <div class=\'col-md-3 no-pad-mar\'>\n            <button class=\'NextBtn text-center pull-right\' data-page-enum=\'1\' disabled>\n              Next\n            </button>\n          </div>\n        </div>\n        <div class=\'orange-txt tipsHeader\'>\n          Tips\n        </div>\n        <div class=\'TipContent\'>\n          Buy items worth Rs. 500 &amp; get 40% off. Fill in the minimum amount on which the discount is given. Discount can be in percentage or rupees.\n        </div>\n      </div>\n    </div>\n    <div class=\'col-lg-6 col-md-6 col-sm-6 OfferPreviewContainer\'>\n      <OffersPreview></OffersPreview>\n    </div>\n  </div>\n</newOffer>\n<div class=\'error_modal hide\'>\n  <div class="modal-dialog" role="document">\n    <div class="modal-content">\n      <div class="modal-header">\n        <button type="button" class="close closeErrorModal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\n        <h4 class="modal-title" id="myModalLabel">Tinyowl Offer Panel</h4>\n      </div>\n      <div class="modal-body">\n        <div class=\'ofr_crte_err_msg\'></div>\n      </div>\n      <div class="modal-footer">\n        <button type="button" class="btn btn-warning closeErrorModal">Ok</button>\n      </div>\n    </div>\n  </div>\n</div>\n';
+  124
+  125  }
+
+/Users/sourabh/sitting/src/scripts/config/config.js:
+    1: var CONSUL={"socket_api_url":"//localhost:8080","kafka":{"suffix":"UzBefwatju","prefix":"awtUnUbyic","ProductId":"ZiipegedO8","KafkaURL":"//staging-kafka.tinyowl.com/v1/publish"},"base_api_url":"https://api-release.tinyowl.com"};
+
+/Users/sourabh/sitting/src/scripts/config/default.js:
+    1  var CONSUL={
+    2    "application": {
+    3:     "base_api_url": "http://api-release.tinyowl.com/"
+    4    },
+    5    "kafka": {
+    6:     "KafkaURL": "http://staging-kafka.tinyowl.com/v1/publish",
+    7      "ProductId": "ZiipegedO8",
+    8      "prefix": "awtUnUbyic",
+
+/Users/sourabh/sitting/src/scripts/modules/restaurant/users/components/LandingPage.jsx:
+   18      <div className='loginBox col-sm-12 col-md-4 col-md-push-4'>
+   19        <div className='main_TinyLogo'>
+   20:         <img src='images/TinyOwlLogo.png' />
+   21        </div>
+   22        <div className='TinyHeader'>
+   ..
+   50          <div className="modal-content">
+   51            <div className="modal-header">
+   52:             <h3 className="modal-title text-center" id="myModalLabel">Tinyowl Business</h3>
+   53            </div>
+   54            <div className="modal-body">
+
+/Users/sourabh/sitting/src/scripts/modules/restaurant/users/views/LandingPage.js:
+   48      },
+   49      /**
+   50:      * [login : Log into tinyowl restrowebapp]
+   51       * @return {[type]} [no return type]
+   52       */
+
+/Users/sourabh/sitting/test/bower.json:
+    1  {
+    2:   "name": "TinyowlRestaurantWebapp",
+    3    "private": true,
+    4    "dependencies": {
+
+28 matches across 13 files

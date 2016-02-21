@@ -7,15 +7,12 @@ scripts/vendor/bower_components/backbone/backbone.js
 scripts/vendor/bower_components/jsx-requirejs-plugin/js/JSXTransformer.js
 scripts/vendor/bower_components/requirejs-text/text.js
 scripts/vendor/bower_components/jsx-requirejs-plugin/js/jsx.js
-scripts/vendor/bower_components/alertify.js/dist/js/alertify.js
+scripts/vendor/bower_components/alertifyjs/build/alertify.js
 scripts/vendor/bower_components/react/react.js
-scripts/lodash.js
-scripts/vendor/bower_components/machina/lib/machina.js
 scripts/vendor/bower_components/react.backbone/react.backbone.js
 scripts/vendor/bower_components/backbone-react-component/lib/component.js
 scripts/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js
 scripts/modules/restaurant/helper/urlStore.js
-scripts/vendor/bower_components/cryptojslib/rollups/md5.js
 scripts/libs.js
 
 scripts/mainConfig.js

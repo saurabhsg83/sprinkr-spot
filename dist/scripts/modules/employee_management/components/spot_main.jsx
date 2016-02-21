@@ -20,13 +20,14 @@ function ($, React, Header, DragableSeat, DropableSeat, Table, SearchBar, Filter
     },
 
     componentWillMount: function () {
+      $('#loading').show();
       Backbone.on('collection:change', function() {
         this.forceUpdate();
       }.bind(this));
     },
 
     componentDidMount: function () {
-
+      $('#loading').hide();
     },
 
     render_seat: function (model, seat_number) {
@@ -44,28 +45,8 @@ function ($, React, Header, DragableSeat, DropableSeat, Table, SearchBar, Filter
       return element;
     },
 
-    // render_sittings: function() {
-    //   var _this = this;
-    //   var element = this.props.tables.map(function (index) {
-    //     return (
-    //       <div className="sitting" style={sitting_style}>
-    //         <Seat model={this.getCollection().find({seat: 1, table: index})} number={1} />
-    //         <Seat model={this.getCollection().find({seat: 2, table: index})} number={2} />
-    //         <Table number={index} />
-    //         <Seat model={this.getCollection().find({seat: 3, table: index})} number={3} />
-    //         <Seat model={this.getCollection().find({seat: 4, table: index})} number={4} />
-    //       </div>
-    //     );
-    //   });
-    // },
-
     render: function () {
       var _this = this;
-      var sitting_style = {
-        display: 'inline-block',
-        margin: '25px'
-      };
-
       return (
         <div>
           <Header></Header>
@@ -81,12 +62,12 @@ function ($, React, Header, DragableSeat, DropableSeat, Table, SearchBar, Filter
             </div>
           </div>
           <div className="panel panel-default" style={{textAlign: 'center'}}>
-            <div className = "panel-body sitting-structure" style={{width: '80%', margin: '20px auto 20px auto', border: '1px solid black', background: '#f0f0f0'}}>
+            <div className = "panel-body sitting-structure">
               <div className="sit">
                 {
                   this.getCollection().map(function (model) {
                     return (
-                      <div className="sitting row" style={sitting_style} key={model.cid}>
+                      <div className="sitting row" key={model.cid}>
                         <div className="col-xs-12">
                           <div className="upper-seats row">
                             <div className="col-xs-6" style={{textAlign: 'center'}}>

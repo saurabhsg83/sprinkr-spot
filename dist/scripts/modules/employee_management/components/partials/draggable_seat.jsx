@@ -60,7 +60,10 @@ function ($, _, Backbone, React, ReactBootstrap, ReactDnD, HTML5Backend) {
       var opacity = 1;
       if (!!this.getModel() && !!this.getModel().get('found')) {
         seat_color = '#08C';
-        this.show_popover();
+        if (!!!this.getModel().get('found_type')) {
+          this.show_popover();
+        }
+
       }
 
       if (!!this.props.isDragging) {

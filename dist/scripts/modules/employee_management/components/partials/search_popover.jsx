@@ -74,7 +74,8 @@ function ($, _, Backbone, React, ReactBootstrap) {
         result.map(function (employee) {
           employee.set({
             found: checked,
-            type_search: _this.state.search_param
+            type_search: _this.state.search_param,
+            found_type: checked
           });
         });
       });
@@ -89,7 +90,7 @@ function ($, _, Backbone, React, ReactBootstrap) {
       }
 
       this.setState({
-        search_values: _.uniq(search_values)
+        search_values: _.uniq(search_values, function(x) { return x.trim().toLowerCase() })
       });
     },
 
@@ -103,7 +104,7 @@ function ($, _, Backbone, React, ReactBootstrap) {
           });
         });
       }
-      search_params = _.uniq(search_params);
+      search_params = _.uniq(search_params, function(x) { return x.trim().toLowerCase() })
       return search_params;
     },
 
@@ -113,13 +114,16 @@ function ($, _, Backbone, React, ReactBootstrap) {
       var Popover = ReactBootstrap.Popover;
 
       return (
-        <Popover {...this.props} style={{borderRadius: '0', zIndex: '2000'}} title={
+        <Popover {...this.props} className="filter-popover" id = {"filter"} title={
             <div className="search-params row Flex">
-              <div className="col-xs-6 heading-tag">
+              <div className="col-xs-4 heading-tag">
                 <Input type="checkbox" label="Team" name="search" value="team" checked={this.is_selected("team")} onChange={this.change_selected}/>
               </div>
-              <div className="col-xs-6 heading-tag">
+              <div className="col-xs-4 heading-tag">
                 <Input type="checkbox" label="Job Title" name="search" value="designation" checked={this.is_selected("designation")} onChange={this.change_selected}/>
+              </div>
+              <div className="col-xs-4 heading-tag">
+                <Input type="checkbox" label="Project" name="search" value="project" checked={this.is_selected("project")} onChange={this.change_selected}/>
               </div>
             </div>
           }

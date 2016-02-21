@@ -22,15 +22,9 @@ define([
 
     render: function () {
       var _this = this;
-       var table_style = {
-        border: '1px solid rgba(150,150,150,0.42)',
-        background: '#DCD6D6',
-        padding: '60px 80px 60px 80px',
-        display: 'inline-block'
-      };
       return (
         <div>
-          <div className="project-table" style={table_style}>
+          <div className="project-table">
             Table-{this.props.number}
           </div>
         </div>

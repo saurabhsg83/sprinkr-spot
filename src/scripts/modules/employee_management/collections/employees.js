@@ -27,7 +27,7 @@ define([
 
     custom_search: function(param, value) {
       return (this.filter(function(data) {
-          return (data.get(param) == value);
+          return (data.get(param).toLowerCase() == value.toLowerCase());
       }));
     }
   });

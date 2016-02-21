@@ -23,7 +23,6 @@ define([
     render: function () {
       var _this = this;
       var sitting_style = {
-        display: 'inline-block',
         marginRight: '15px',
         marginLeft: '15px'
       };
