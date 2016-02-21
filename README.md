@@ -51,3 +51,10 @@ Please find the running project(deployed on heroku) [here](https://spriklr-spot.
 * Hashing file names to clear browser cache
 * Watch task to see all changes and livereloading
 
+# Backend Apis #
+* Fetch Employee Data: https://dry-lowlands-91593.herokuapp.com/spot/employees
+* Update Employee: https://dry-lowlands-91593.herokuapp.com/spot/employee/:id
+
+
+
+
