@@ -56,7 +56,10 @@ function ($, _, Backbone, React, ReactBootstrap) {
     clear_search: function() {
       this.props.collection.map(function (model) {
         model.get('employees').map(function (employee) {
-          employee.set('found', false);
+          employee.set({
+            found: false,
+            found_type: false
+          });
         });
       });
     },
